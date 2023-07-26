@@ -10,9 +10,12 @@
   <header>
     <h1>Fake Store</h1>
     <hr>
+    <button id="registrationForm"> Formulario registro </button>
   </header>
   <main>  
-    <div class="income">
+    <div id="list-products" style="display: flex; flex-wrap: wrap;"></div>
+    <div class="income" id="anuncio" style="display: none;">
+      <span class="boton" onclick="cerrarAnuncio('anuncio')">x</span>
       <div class="internal">
         <h3>Ingreso de datos</h3>
       <label for="titleProduct">Titulo:</label>
@@ -25,25 +28,17 @@
         <option value="Electrónicos">Electrónicos</option>
       </select>
       <label for="description">descripcion:</label>
-      <textarea name="description" id="description" cols="30" rows="10"></textarea><br><br>
+      <textarea name="description" id="description" cols="30" rows="10"></textarea>
       <label for="precio">precio:</label>
       <input type="number" id="precio">
       <button class="register">Registrar</button>
     </div>
 </div>
-    <div class="card">
-      <img src="https://images.pexels.com/photos/4109850/pexels-photo-4109850.jpeg?auto=compress&cs=tinysrgb&w=600" alt="card-product">
-      <h2>title-product</h2>
-      <p>Category</p>
-      <p>
-        <span>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eveniet unde sunt hic mollitia nihil reprehenderit, vero neque sint saepe debitis quibusdam iusto fugiat illum voluptatum quo repellendus veritatis impedit.
-        </span>
-        <p class="price">$price</p>
-      </p>      
-    </div>
+
   </main>
   <footer></footer>
   <script src="app.js"></script>
+
+
 </body>
 </html>
